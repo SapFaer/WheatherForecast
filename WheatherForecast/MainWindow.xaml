@@ -1,0 +1,14 @@
+﻿<Window x:Class="WheatherForecast.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Синоптик" Height="600" Width="800">
+    <DataGrid Name="WeatherDataGrid" Margin="10,10,10,10" AutoGenerateColumns="False" CanUserAddRows="False">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Час" Binding="{Binding Time}" Width="*" />
+            <DataGridTextColumn Header="Температура (°C)" Binding="{Binding Temperature}" Width="*"/>
+            <DataGridTextColumn Header="Вологість (%)" Binding="{Binding Humidity}" Width="*" />
+            <DataGridTextColumn Header="Опис" Binding="{Binding Description}" Width="*"/>
+        </DataGrid.Columns>
+    </DataGrid>
+
+</Window>
